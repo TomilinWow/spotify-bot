@@ -1,0 +1,14 @@
+version: "2.0"
+
+rules:
+
+- rule: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- rule: bye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

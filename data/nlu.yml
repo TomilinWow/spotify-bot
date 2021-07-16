@@ -1,0 +1,108 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - привет
+    - хеллоу
+
+- intent: goodbye
+  examples: |
+    - пока
+    - до встречи
+
+
+- intent: get_custom_playlist
+  examples: |
+    - плейлисты дня
+    - мувикс хочу плейлисты дня
+    - покажи топ плейлисты
+
+
+- intent: save_music
+  examples: |
+    - Мувикс сохрани трек
+    - Можешь сохранить текущую песню
+    - сохрани песню в мои любимые
+    - сохранить текущую композицию
+    - засейви песню в избранное
+    - добавь песню в избранное
+    - добавь трек в любимое
+
+- intent: play_song
+  examples: |
+    - мувикс включи [трек](song)
+    - мувикс включи [песню](song)
+    - хочу послушать [песню](song)
+    - можешь включить [музыка](song)
+
+- intent: play_playlist
+  examples: |
+    - Мувикс найди [плейлист](playlist)
+    - можешь включить [плейлист](playlist)
+    - Хочу послушать [плейлист](playlist)
+    - включи [плейлист](playlist)
+
+- intent: play_content
+  examples: |
+    - Включи [новый](name_content)
+    - включи [старый](name_content)
+    - Открой [топ дня](name_content)
+    - Вруби [топ недели](name_content)
+    - Воспроизв [летние](name_content)
+    - Играй [зимние](name_content)
+    - Проигр [осенние](name_content)
+    - Плей [хиты](name_content)
+    - Давай [топ](name_content)
+    - хочу [джаз](name_content)
+    - Запуск [топ](name_content)
+    - Перейти [русская](name_content)
+    - Переключ [рэп](name_content)
+    - Выбрать [рок](name_content)
+    - Найди [поп](name_content)
+    - Поиск [топ 5](name_content)
+
+    - Воспроизв [еминем](name_content)
+    - Играй [рианна](name_content)
+    - Проигр [селена](name_content)
+    - Плей [годзилла](name_content)
+    - Давай [rap god](name_content)
+    - хочу [50 cent](name_content)
+    - включи [бибер](name_content)
+    - Играй [тимберлейк](name_content)
+    - Проигр [juice wrld](name_content)
+    - Плей [окси](name_content)
+    - Давай [летние песни](name_content)
+    - хочу [к поп](name_content)
+
+- synonym: name_content
+  examples: |
+    - новый год
+    - топ дня
+    - топ недели
+    - летнюю
+    - зимнюю
+    - осеннюю
+    - топ года
+    - топ
+    - русскую
+    - рэп
+    - рок
+    - поп
+    - топ 5
+    - эминем
+    - рианна
+    - окси
+    - бибер
+    - к поп
+    - селена
+    - годзилла
+    - rap god
+
+
+- synonym: song
+  examples: |
+    - трек
+    - песня
+    - музыка
+

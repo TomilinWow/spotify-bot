@@ -1,0 +1,31 @@
+version: "2.0"
+
+stories:
+
+- story: play the song
+  steps:
+  - intent: play_song
+  - action: action_play_music
+
+- story: play the content
+  steps:
+  - intent: play_content
+  - action: action_play_content
+
+
+- story: save current song
+  steps:
+  - intent: save_music
+  - action: action_add_current_track
+
+- story: get custom playlist
+  steps:
+  - intent: get_custom_playlist
+  - action: action_get_custom_playlist
+  - intent: play_playlist
+  - action: action_play_custom_playlist
+
+- story: play the playlist
+  steps:
+  - intent: play_playlist
+  - action: action_play_custom_playlist

@@ -1,0 +1,84 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - save_music
+  - get_custom_playlist
+  - play_playlist
+  - play_song
+  - play_content
+
+actions:
+  - action_play_music
+  - action_add_current_track
+  - action_get_custom_playlist
+  - action_play_custom_playlist
+  - action_play_content
+
+entities:
+  - song
+  - playlist
+  - is_get_playlist
+  - name_content
+
+slots:
+  song:
+    type: text
+  playlist:
+    type: text
+  is_get_playlist:
+    type: bool
+  name_content:
+    type: text
+
+responses:
+
+  utter_greet:
+  - text: "Привет)"
+  - text: "Здравствуй)"
+
+  utter_goodbye:
+  - text: "Пока, мой друг)"
+
+  utter_second:
+  - text: "Секунду..."
+  - text: "Сейчас..."
+  - text: "Подожди немного..."
+
+  utter_enjoy_music:
+  - text: "Наслаждайся музыкой!"
+  - text: "Держи!"
+  - text: "Наслаждайся, мой друг)"
+  - text: "Надеюсь тебе понравится)"
+  - text: "Включаю)"
+
+  utter_add_track_ok:
+  - text: "Песня добавлена в избранное"
+  - text: "Добавлена!!!"
+
+  utter_add_track_error:
+  - text: "Не получилось добавить песню в избранное"
+  - text: "Увы, не получилось добавить трек :("
+
+  utter_search_error:
+  - text: "Мне не удалось найти контент"
+  - text: "Увы, я ничего не нашел :("
+
+  utter_spotify_no_active_error:
+  - text: "Включи spotify, и попробуй снова"
+  - text: "Где spotify?? включи пожалуйста"
+
+  utter_spotify_premium_error:
+  - text: "Оформи платную подписку Spotify, чтобы получить доступ к данной функции"
+  - text: "У тебя нет платной подписки Spotify"
+
+  utter_clarify_error:
+  - text: "Я тебя не понял, уточни пожалуйста)"
+  - text: "Можешь уточнить, чего ты желаешь?)"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
