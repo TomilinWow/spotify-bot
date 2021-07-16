@@ -5,8 +5,8 @@ class Refresh:
 
     def __init__(self):
         self.access_token = ''
-        self.refresh_token = 'AQBq30Nk8ub5gwctGQlyAs-1e9qoNuoS3bPo58j5AE_4TX25CSztcfV_XAhe9BACKp_4Og2HU8KugH6UNuEOPySgvpm3zN0WtnkdB5PX7v96YqjpkBqIiIK_VgZioKC3v4k'
-        self.base_64 = "NTA1YjE5NDJlNzUzNDBlOWI3M2Q0MGZmYzk4OTA1MjI6ZGY5ODgxYTAzY2M0NDMwNTkzMjdlODAwYmU0Y2I5M2E="
+        self.refresh_token = '****'
+        self.base_64 = '****'
         self.access_token_expires = datetime.datetime.now()
 
     def refresh(self):
