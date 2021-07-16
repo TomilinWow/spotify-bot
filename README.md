@@ -3,9 +3,9 @@
 
 # Чтобы запустить чат-бот необходимо
 1) Получить свой refresh token и base64 Spotify,подробнее по ссылке https://developer.spotify.com/documentation/general/guides/authorization-guide/
-2) Полученные refresh token и base64 вбить в файл spotify_token, вместо ****:
-    self.refresh_token = '****'
-    self.base_64 = '****'
+2) Полученные refresh token и base64 вбить в файл spotify_token, вместо ****:                                                               
+self.refresh_token = '****'                                                            
+self.base_64 = '****'
 
 3) pip install rasa
 4) cd folder project
